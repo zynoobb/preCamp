@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <!-- style tag를 쓰는 방식
+    <style>.pw{
+        border: 1px solid blue;
+    }</style> -->
+<link href="02-signup.css" rel="stylesheet">     
+</head>
+<body>
+    <div class="bigbox">
+        <div class="mainbox">
+            <div class="main-ment">
+                <div>회원가입을 위해<br>정보를 입력해주세요.</div>
+            </div>
+            <div class="main-content">
+                <div>*이메일</div>
+                <input type="text">
+                <div>*이름</div>
+                <input type="text">
+                <div>*비밀번호</div>
+                <input type="number">
+                <div>*비밀번호 확인</div>
+                <input type="number">
+            </div>
+            <div class="gender">
+                <div class="gender-select">
+                    <input name="gender-choice" type="radio">
+                    <span>여성</span>
+                </div>
+                <div class="gender-select">
+                    <input name="gender-choice" type="radio">
+                    <span>남성</span>
+                </div>  
+            </div>
+            <div class="user_promise">
+                <input type="checkbox">
+                <span>이용약관 개인정보 수집 및 마케팅 활용 선택에 모두 동의합니다.</span>
+            </div>
+            <button class="btn">가입하기</button>
+        </div>
+    </div>
+</body>
+</html>

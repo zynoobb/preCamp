@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./alone.css" />
+        <script src="./alone.js" defer></script>
+    </head>
+    <body>
+        <div class="mainBox">
+            <h1>디-데이 카운트다운</h1>
+            <div class="container" style="display: none">
+                <div class="child-class">
+                    <span id="days">0</span>
+                    <span>일</span>
+                </div>
+                <div class="child-class">
+                    <span id="hours">0</span>
+                    <span>시</span>
+                </div>
+                <div class="child-class">
+                    <span id="mins">0</span>
+                    <span>분</span>
+                </div>
+                <div class="child-class">
+                    <span id="secs">0</span>
+                    <span>초</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <input
+                    id="input-year"
+                    type="text"
+                    placeholder="년도"
+                    maxlength="4"
+                    oninput="focus1()"
+                    class="inputBox"
+                />
+                -
+                <input
+                    id="input-month"
+                    type="text"
+                    placeholder="월"
+                    maxlength="2"
+                    oninput="focus2()"
+                    class="inputBox"
+                />
+                -
+                <input
+                    id="input-days"
+                    type="text"
+                    placeholder="일"
+                    maxlength="2"
+                    oninput="focus3()"
+                    class="inputBox"
+                />
+            </div>
+            <button id="start-btn" onclick="counterMaker()">카운트다운</button>
+            
+            <div id="wrongInput"></div>
+        </div>
+    </body>
+</html>

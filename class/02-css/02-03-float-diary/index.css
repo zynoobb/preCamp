@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.wrapper {
+    width: 620px;
+    border: 1px solid gray;
+    padding: 40px 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+.wrapper__head {
+    border-bottom: 1px dashed gray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.wrapper_head_title {
+    font-size: 32px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.wrapper_head_sub-title {
+    font-size: 18px;
+    padding: 10px 0px;
+}
+#point {
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 15px;
+    display: block;
+}
+.wrapper__body {
+    border: 1px solid #dddddd;
+    padding: 20px 30px;
+}
+.diary-title {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+.cold {
+    color: blue;
+    font-weight: 600;
+}
+.hospital {
+    color: red;
+    font-weight: 600;
+}
+.highlight {
+    font-size: 22px;
+    color: violet;
+    font-weight: 700;
+    font-style: italic;
+}
+.diary-date {
+    text-align: right;
+    color: #919191;
+    font-size: 14px;
+}
+.header {
+    border-bottom: 1px solid gray;
+}
+.header-inner {
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    width: 100px;
+    height: 80px;
+    padding-top: 22px;
+}
+.logo h1 a {
+    text-decoration: none;
+    color: orange;
+}
+.menu {
+    float: left;
+    /* calc() 공백 필요 */
+    width: calc(100% - 200px);
+    height: 80px;
+    text-align: center;
+}
+.menu_ul {
+    display: inline-block;
+}
+.menu_ul li {
+    float: left;
+    list-style: none;
+}
+.menu_ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 29px 20px;
+}
+.menu_ul li a:hover {
+    color: orange;
+}
+.user {
+    float: left;
+    width: 100px;
+    height: 80px;
+    padding-top: 23px;
+}
+.clearfix {
+    clear: both;
+}

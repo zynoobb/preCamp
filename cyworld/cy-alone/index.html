@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>cy-main</title>
+        <link rel="stylesheet" href="./styless/style.css" />
+        <script
+            src="https://kit.fontawesome.com/c5056d9c41.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+        <div class="outerBox">
+            <div class="wrapper">
+                <div class="wrapper_left">
+                    <div class="left_today">
+                        <span>TODAY 0 | TOTAL 12345</span>
+                    </div>
+                    <div class="left_body">
+                        <div class="left_body_pic"></div>
+                        <div class="left_body_dotLine"></div>
+                        <div class="left_body_profile">
+                            <div class="body_profile_detail">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <span>이름</span>
+                            </div>
+                            <div class="body_profile_detail">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Phone</span>
+                            </div>
+                            <div class="body_profile_detail">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>E-mail</span>
+                            </div>
+                            <div class="body_profile_detail">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>인스타그램</span>
+                            </div>
+                        </div>
+                        <div class="left_body_footer">
+                            <span>오늘의 기분</span>
+                            <select name="feeling" id="feeling">
+                                <option value="">기쁨 😃</option>
+                                <option value="">그냥 그럼 😙</option>
+                                <option value="">죠음 😋</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper_right">
+                    <div class="right_header">
+                        <div class="header_left">사이좋은 사람들, 싸이월드</div>
+                        <div class="header_right">사생활 보호 설정 ▸</div>
+                    </div>
+                    <div class="right_body">
+                        <iframe id="contentFrame" src="./home.html"></iframe>
+                    </div>
+                </div>
+                <div class="navigate">
+                    <div
+                        class="navigateItem basicnavigateItem"
+                        onclick="naviHome()"
+                        id="menuHome"
+                    >
+                        홈
+                    </div>
+                    <div
+                        class="navigateItem"
+                        onclick="naviGame()"
+                        id="menuGame"
+                    >
+                        게임
+                    </div>
+                    <div
+                        class="navigateItem"
+                        onclick="naviJukeBox()"
+                        id="menuJukebox"
+                    >
+                        주크박스
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

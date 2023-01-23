@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.flex-container {
+    height: 300px;
+    background-color: gray;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+}
+.flex-container div {
+    background-color: white;
+    border: 1px solid red;
+}
+
+.header {
+    height: 80px;
+    border: 1px solid red;
+}

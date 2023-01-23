@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 104px;
+    border: 2px solid red;
+    position: relative;
+    margin-top: 50px;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    position: absolute;
+    animation: moveBox 1s ease-in-out infinite alternate;
+}
+.item span {
+    color: #fff;
+}
+
+@keyframes moveBox {
+    from {
+        border-radius: 0;
+        left: 0;
+        background-color: blue;
+        transform: scale(1);
+    }
+    to {
+        border-radius: 50%;
+        left: calc(100% - 100px);
+        background-color: green;
+        transform: scale(0.75);
+    }
+}
+
+.container:nth-of-type(2) {
+    border: 2px solid black;
+    background-color: black;
+    height: 500px;
+}
+
+.rainbowPlate {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    animation: rainBow 1s ease-in-out infinite normal;
+}
+@keyframes rainBow {
+    0% {
+        top: 0px;   
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        top: calc(95%);
+        opacity: 0;
+    }
+}
+.rainbowPlate:nth-of-type(2){
+    left: 100px;
+    animation-duration: 0.9s;
+}
+.rainbowPlate:nth-of-type(3){
+    left: 150px;
+    animation-duration: 1.1s;
+}
+.rainbowPlate:nth-of-type(4){
+    left: 200px;
+    animation-duration: 0.8s;
+}
+.rainbowPlate:nth-of-type(5){
+    left: 250px;
+    animation-duration: 1.1s;
+}
+.rainbowPlate:nth-of-type(6){
+    left: 300px;
+    animation-duration: 1.0s;
+}
+.rainbowPlate:nth-of-type(7){
+    left: 350px;
+    animation-duration: 0.9s;
+}
+.rainbowPlate:nth-of-type(8){
+    left: 400px;
+    animation-duration: 0.7s;
+}
+.rainbowPlate:nth-of-type(9){
+    left: 450px;
+    animation-duration: 0.5s;
+}
+.rainbowPlate:nth-of-type(10){
+    left: 500px;
+    animation-duration: 0.8s;
+}
+.rainbowPlate:nth-of-type(11){
+    left: 550px;
+    animation-duration: 0.7s;
+}
+.rainbowPlate:nth-of-type(12){
+    left: 600px;
+    animation-duration: 1.1s;
+}
+.rainbowPlate:nth-of-type(13){
+    left: 650px;
+    animation-duration: 0.7s;
+}
+.rainbowPlate:nth-of-type(14){
+    left: 700px;
+    animation-duration: 1.0s;
+}
+.rainbowPlate:nth-of-type(15){
+    left: 750px;
+    animation-duration: 0.9s;
+}
+.rainbowPlate:nth-of-type(16){
+    left: 800px;
+    animation-duration: 0.8s;
+}

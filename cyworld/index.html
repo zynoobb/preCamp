@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>홍길동님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
+        <link href="./styles/index.css" rel="stylesheet" />
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="outerbox">
+                <div class="wrapper">
+                    <div class="wrapper_left">
+                        <div class="wrapper_left_header">
+                            <!-- today,total -->
+                            <div class="today">
+                                <span>TODAY</span>
+                                <span>0</span>
+                                <span>| TOTAL</span>
+                                <span>12345</span>
+                            </div>
+                        </div>
+                        <div class="wrapper_left_body">
+                            <div class="left_body_header">
+                                <div class="left_body_header_gray"></div>
+                                <div class="left_body_header_line"></div>
+                            </div>
+                            <div class="left_body_profile">
+                                <div class="profile_detail">
+                                    <i class="fa-regular fa-face-smile"></i>
+                                    <span>이름</span>
+                                </div>
+                                <div class="profile_detail">
+                                    <i class="fa-regular fa-phone"></i>
+                                    <span>Phone</span>
+                                </div>
+                                <div class="profile_detail">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span>E-mail</span>
+                                </div>
+                                <div class="profile_detail">
+                                    <i class="fa-regular fa-star"></i>
+                                    <span>인스타그램</span>
+                                </div>
+                            </div>
+                            <div class="left_body_footer">
+                                <div class="wrapper_feel">
+                                    <div class="left_body_footer_todaymood">
+                                        오늘의 기분
+                                    </div>
+                                    <select class="left_body_footer_moodSelect">
+                                        <option>기쁨 😃</option>
+                                        <option>슬픔 😭</option>
+                                        <option>보통 😌</option>
+                                        <option>화남 😤</option>
+                                    </select>
+                                </div>
+                                <!-- 이모지 :  컨트롤 커맨드 스페이스 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper_right">
+                        <div class="wrapper_right_header">
+                            <span class="wrapper_right_header_title"
+                                >사이좋은 사람들, 싸이월드</span
+                            >
+                            <button class="wrapper_right_header_setting">
+                                사생활 보호 설정▸
+                            </button>
+                        </div>
+                        <div class="wrapper_right_body">
+                            <iframe id="contentFrame" src="home.html"></iframe>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <div class="navigationItem" id="menuHome" onclick="menuHome()">홈</div>
+                        <div class="navigationItem" id="menuJukebox" onclick="menuJukebox()">주크박스</div>
+                        <div class="navigationItem" id="menuGame" onclick="menuGame()">게임</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script
+        src="https://kit.fontawesome.com/c5056d9c41.js"
+        crossorigin="anonymous"
+    ></script>
+</html>

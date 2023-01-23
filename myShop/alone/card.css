@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.card-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    width: calc(25% - 11px);
+    aspect-ratio: 6 / 5;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    border: 2px solid black;
+}
+
+.imgBox {
+    width: 100%;
+    height: 100%;
+}
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    object-fit: cover;
+}
+
+.textBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top : 0;
+    left: 0;
+    color: white;
+    font-size: 1.875rem;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:end;
+    padding: 20px;
+}
+
+.titleText {
+    transform: translateY(50px);
+    opacity: 0;
+}
+.priceText {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.card:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+/* 마우스오버 */
+.card:hover:after {
+    opacity: 1;
+}
+.card:hover .imgBox img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+.card:hover .titleText {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.card:hover .priceText {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* 효과 */
+.titleText, .imgBox img, .card:hover:after {
+    transition: all 0.4s ease-in-out
+}
+.priceText {
+    transition: all 0.4s ease-in-out 0.15s
+}

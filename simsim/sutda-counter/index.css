@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Nanum+Gothic&family=Ubuntu:wght@500&family=Yeon+Sung&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    background-color: pink;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+input {
+    padding: 5px;
+    max-width: 6rem;
+    height: 2rem;
+    color: black;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+button {
+    max-width: 10rem;
+    height: 2rem;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-right: 1rem;
+    box-shadow: 3px 3px gray;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;    
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    width: 100%;
+    height: 100%;
+    border: 3px solid purple;
+    list-style: none;
+    padding: 0;
+}
+
+select {
+    padding: 5px;
+    min-width: 4rem;
+    height: 2rem;
+    color: black;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.head_wrapper {
+    border: 5px solid red;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.neck_wrapper {
+    width: 100%;
+    height: 70%;
+    border: 4px solid orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+/* 4사분면 */
+.person_add {
+    width: 35%;
+    height: 100%;
+    border: 3px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 1사분면 */
+.point_add {
+    border: 3px solid blue;
+    width: calc(100% - 35%);
+    height: 100%;
+}
+
+.body_wrapper {
+    border: 5px solid orange;
+    width: 100%;
+    height: calc(100vh - 8rem);
+    display: flex;
+    flex-direction: row;
+}
+.point_add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#select_wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#select_wrapper select {
+    align-items: center;
+    justify-content: center;
+}
+#select_wrapper div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#select_wrapper div span {
+    padding-right: 1rem;
+    margin: 0;
+}
+#select_wrapper div input {
+    width: 3rem;
+}
+
+/* 3사분면 */
+.point_wrapper {
+    border: 4px solid green;
+    width: 35%;
+    height: 100%;
+}
+#ul_point {
+    display: flex;
+    flex-direction: column;   
+}
+#ul_point li {
+    height: 100%;
+    margin: 0.2rem 0rem;
+}
+#ul_point hr {
+    border: 1px solid gray;
+}
+#ul_point li span {
+    padding-left: 1rem;
+    display: inline-block;
+    width: 49%;
+    height: 1.5rem;
+    border: 2px solid red;
+    font-size: 0.8rem;
+}
+.pointList_player {
+    color: black;
+}
+.pointList_mem {
+    padding-left: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.7rem;
+}
+.pointList_mem span {
+    border: 3px solid blue;
+}
+/* 2사분면 */
+.game_wrapper {
+    border: 4px solid blue;
+    width: calc(100% - 35%);
+    height: 100%;
+}
+
+

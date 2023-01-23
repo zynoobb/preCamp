@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./main.js" defer></script>
+        <link rel="stylesheet" href="./style.css" />
+        <title>alone-todo</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="outdoor_wrapper">
+                <div class="outdoor"></div>
+            </div>
+            <h1 id="location_name_tag">ToDo</h1>
+            <h2 id="location_temp_tag">온도</h2>
+            <div class="todo_container">
+                <input type="text" id="input_todo" onkeydown="keyCodeCheck()" />
+                <ul id="ul_list"></ul>
+            </div>
+            <div class="delete-btn-wrapper">
+                <button onclick="deleteAll()">All delete</button>
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,104 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body { 
+    margin: 0;
+    padding: 0;
+}
+.itemWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.item {
+    width: calc(25% - 11px);
+    /* aspect-ratio 지정한 비율을 유지함 (가로) / (세로) */
+    aspect-ratio: 6 / 5;
+    position: relative;
+    /* overflow 영역 밖으로 나가지 못하게 함 */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+.imgBox {
+    width: 100%;
+    height: 100%;
+}
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    /* 찌그러지지 않기 위해 */
+    object-fit: cover;
+}
+.textBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+    z-index: 3;
+}
+.textBox p {
+    color: #ffffff;
+    margin: 5px 0 0 0;
+}
+.textBox_name {
+    font-size: 22px;
+    font-weight: 500;
+    /* 투명도 opacity : 0 일 경우 안보이게 할 수 있음*/
+    opacity: 0;
+    transform: translateY(50px);
+}
+.textBox_price {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+.item:hover:after {
+    opacity: 1;
+}
+.item:hover .textBox_name {
+    opacity: 1;
+    transform: translateY(0);
+}
+.item:hover .textBox_price {
+    opacity: 1;
+    transform: translateY(0);
+}
+.item:hover .imgBox img {
+    transform: scale(1.1);
+    /* 필터 */
+    filter: blur(2px);
+}
+
+.item:after, 
+.item .imgBox img,
+.item .textBox_name,
+.item .textBox_price {
+    transition: all 0.4s ease-in-out;
+}
+.item .textBox_price {
+    transition: all 0.4s ease-in-out 0.15s;
+}

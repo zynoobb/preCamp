@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 600px;
+    height: 500px;
+    background-color: #eeeeee;
+    border: 1px solid red;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between ;
+}
+.container div {
+    background-color: blue;
+    width: 200px;
+    margin: 5px;
+    color: white;
+}
+/* 기본 오더값은 0, 따라서 order 1, order 3 이 뒤에 붙게 됨 */
+.box4 {
+    order: 3;
+}
+.box5 {
+    order : 1;
+}

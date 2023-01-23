@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="./style/01.alone.css" />
+        <script src="./01-alone.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="wrapper_header">코드캠프 회원가입</div>
+            <input
+                class="input box"
+                type="text"
+                placeholder="이메일을 입력해주세요."
+                id ="email"
+            />
+            <div class="err" id="err_email"></div>
+            <input
+                class="input box"
+                type="text"
+                placeholder="이름을 입력해주세요."
+                id="name"
+            />
+            <div class="err" id="err_name"></div>
+            <input
+                class="input box"
+                type="password"
+                placeholder="비밀번호를 입력해주세요."
+                id="password"
+            />
+            <div class="err" id="err_password"></div>
+            <input
+                class="input box"
+                type="password"
+                placeholder="비밀번호를 입력해주세요."
+                id="password2"
+            />
+            <div class="err" id="err_password2"></div>
+            <div class="body_phone">
+                <input class="box phone" id="phone1" oninput="changeP1()" type="text" maxlength="3"/> -
+                <input class="box phone" id="phone2" oninput="changeP2()" type="text" maxlength="4"/> -
+                <input class="box phone" id="phone3" oninput="changeP3()" type="text" maxlength="4"/>
+            </div>
+            <div class="cerity_wrapper">
+                <div class="cerity_num" id="showToken">000000</div>
+                <button class="box cerity" id="getToken" onclick="action()" disabled>인증번호 전송</button>
+            </div>
+            <div class="cerity_wrapper">
+                <div class="cerity_num" id="confirmTime">3:00</div>
+                <button class="box cerity" id="confirmToken" onclick="confirm()" disabled>인증확인</button>
+            </div>
+            <select class="box region" name="" id="location">
+                <option value="0"  disabled selected>지역을 선택하세요.</option>
+                <option value="1">서울</option>
+                <option value="2">경기</option>
+                <option value="3">인천</option>
+            </select>
+            <div class="err" id="err_location"></div>
+            <div class="gender_wrapper">
+                <div class="gender">
+                    <input type="radio" name="gender" id="female" />
+                    <span>여성</span>
+                </div>
+                <div class="gender">
+                    <input type="radio" name="gender" id="male"/>
+                    <span>남성</span>
+                </div>
+            </div>
+            <div class="err" id="err_gender"></div>
+            <hr />
+            <button class="box join" id="join" onclick="joinUs()" disabled>가입하기</button>
+            
+        </div>
+
+    </body>
+</html>

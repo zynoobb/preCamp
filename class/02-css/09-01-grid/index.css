@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+.container { 
+    border: 2px solid red;
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr 2fr); */
+    /* grid-template-rows: repeat(4, 100px); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+.item {
+    border: 2px solid blue;
+}
+
+.item1 {
+    /* span의 의미 : 전체 탬플릿 기준으로 2칸을 차지하겠다는 뜻 */
+}
+
+.item2 {
+    background-color: red;
+    grid-row-start: span;
+    grid-row-end: span 2;
+}
+.item4 {
+    background-color: red;
+    grid-column: 4;
+    grid-row-start: span;
+    grid-row-end: span 2;
+}

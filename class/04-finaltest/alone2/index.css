@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Nanum+Gothic&family=Ubuntu:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Nanum Gothic', 'Inter', sans-serif;
+    /* color: #0068ff; */
+    color: black;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.big_box {
+    width: 540px;
+    height: 900px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #aacdff ;
+    box-shadow: 7px 7px 39px rgb(0 104 255 / 25%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    width: 380px;
+    height: 1000px;
+}
+.header {
+    margin: 0px 130px 30px 0px;
+    color: #0068ff;
+}
+.main_input_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 1px solid #d2d2d2;
+    color: black;
+    border-radius: 7px;
+    padding: 18px;
+    /* transition: all 0.5s ease; */
+}
+/* .box:focus {
+    background-color: #0068ff;
+    color: white;
+    font-weight: 500;
+    border: 1px solid white;
+} */
+.box::placeholder {
+    color: #797979;
+}
+/* .box::placeholder:focus {
+    color: white;
+} */
+
+.phone_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.phone {
+    width: 100px;
+    height: 40px;
+}
+.certify_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.certify_wrapper span {
+    margin-right: 5px;
+    color: #0068ff;
+}
+.certify_wrapper button {
+    width: 120px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+    color: #d2d2d2;
+    background-color: white;
+    padding : 5px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+#region {
+    width: 100%;
+    height: 60px;
+}
+.selected-region {
+    color: #797979;
+}
+.gender {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.gender span {
+    margin-left: 10px;
+}
+.gender div {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.divideLine {
+    margin: 15px 0px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.join {
+    height: 80px;
+    color: #d2d2d2;
+    font-size: 16px;
+}
+.err {
+    color: red;
+    font-size: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

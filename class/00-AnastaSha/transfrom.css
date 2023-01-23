@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+.transformer {
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid pink;
+    transition: width 1s ease, background-color 0.3s ease, font-size 1s ease;
+}
+
+.transformer:hover {
+    width: 100%;
+    background-color: gray;
+    font-size: 50px;
+}
+
+.h {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 10%;
+        width: 300px;
+    }
+
+    to {
+        margin-left: 50%;
+        width: 300px;
+        height: 200px;
+    }
+}

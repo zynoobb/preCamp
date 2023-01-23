@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styless/game.css" />
+        <script src="./game.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top_title">
+                <div class="title_first">GAME</div>
+                <div class="title_last">TODAY CHOICE</div>
+            </div>
+            <div class="top_line"></div>
+            <div class="bottom_contents">
+                <div class="game_wrapper">
+                    <img src="./images/word.png" alt="" />
+                    <div>끝말잇기</div>
+                    <div class="text">
+                        <span>제시어 : </span>
+                        <span id="order_text">쿵쿵따</span>
+                    </div>
+                    <div>
+                        <input
+                            id="input_text"
+                            type="text"
+                            onkeydown="enterKey()"
+                            placeholder="단어를 입력하세요."
+                        />
+                        <button onclick="wordAction()">검색</button>
+                    </div>
+                    <div id="word_result">결과!</div>
+                </div>
+                <div class="game_wrapper">
+                    <img src="./images/lotto.png" alt="" />
+                    <div>LOTTO</div>
+                    <div class="text">
+                        버튼을 누르세요.
+                    </div>
+                    <div class="lotto_content">
+                        <span id="lotto_output"></span>
+                    </div>
+                    <button id="lotto_button" onclick="lottoAction()">BUTTON</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

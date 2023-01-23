@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Jua&family=Noto+Sans+KR&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.wrapper {
+    width: 540px;
+    height: 900px;
+    background: #ffffff;
+    border: 1px solid #aacdff;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.box {
+    background: #ffffff;
+    border: 1px solid #d2d2d2;
+    border-radius: 7px;
+    padding: 18px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.box:focus {
+    background-color: #0068ff;
+    color: white;
+}
+
+.wrapper_header {
+    width: 380px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    color: #0068ff;
+    margin-bottom: 10px;
+    display: flex;
+}
+.input {
+    width: 380px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+.err {
+    font-size: 9px;
+    color: red;
+    text-align: center;
+}
+.body_phone {
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+.phone {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.cerity_wrapper {
+    width: 380px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+    align-items: center;
+}
+.cerity {
+    width: 120px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 9px;
+    text-align: center;
+    color: #d2d2d2;
+    padding: 5px;
+    align-items: center;
+}
+.cerity_num {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: right;
+    color: #0068ff;
+    margin-right: 1em;
+    letter-spacing: 0.1em;
+}
+.region {
+    width: 380px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #797979;
+    margin-top: 20px;
+}
+
+.gender_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+}
+.gender {
+    width: 60px;
+    margin: 0px 10px;
+    align-items: center;
+}
+hr {
+    width: 380px;
+    border: 1px solid #e6e6e6;
+    margin: 15px 0px;
+}
+.join {
+    width: 380px;
+    height: 75px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #d2d2d2;
+}
+.join:hover {
+    color: white;
+    background-color: #0068ff;    
+
+}

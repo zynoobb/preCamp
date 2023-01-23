@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <script src="./index.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="big_box">
+            <div class="wrapper">
+                <h1 class="header">코드캠프 회원가입</h1>
+                <div class="main_input_wrapper">
+                    <input
+                        class="box"
+                        id="input_email"
+                        type="text"
+                        placeholder="이메일을 입력해주세요."
+                    />
+                    <div class="err" id="err_email"></div>
+                    <input
+                        class="box"
+                        id="input_name"
+                        type="text"
+                        placeholder="이름을 입력해주세요."
+                    />
+                    <div class="err" id="err_name"></div>
+                    <input
+                        class="box"
+                        id="input_password1"
+                        type="password"
+                        placeholder="비밀번호를 입력해주세요."
+                    />
+                    <div class="err" id="err_password1"></div>
+                    <input
+                        class="box"
+                        id="input_password2"
+                        type="password"
+                        placeholder="비밀번호를 다시 입력해주세요."
+                        />
+                    <div class="err" id="err_password2"></div>
+                </div>
+                <div class="phone_wrapper">
+                    <input id="phone1" class="phone box" oninput="phone1focus()" type="text" /> -
+                    <input id="phone2" class="phone box" oninput="phone2focus()" type="text" /> -
+                    <input id="phone3" class="phone box" oninput="phone3focus()" type="text" maxlength="4"/>
+                </div>
+                <div class="certify_wrapper">
+                    <div class="certify_tokken">
+                        <span id="tokken_number">000000</span>
+                        <button id="tokken_number_send" onclick="tokkenAction()" disabled>인증번호 전송</button>
+                    </div>
+                    <div class="certify_accept">
+                        <span id="accept_time">3 : 00</span>
+                        <button id="accept_check" onclick="certifyAction()" disabled>인증확인</button>
+                    </div>
+                </div>
+                <select name="" id="region" class="box selected-region">
+                    <option value="0" disabled selected style="color: #d2d2d2">
+                        지역을 선택하세요.
+                    </option>
+                    <option value="1">서울</option>
+                    <option value="2">경기</option>
+                    <option value="3">인천</option>
+                </select>
+                <div class="err" id="err_region"></div>
+                <div class="gender">
+                    <div id="female">
+                        <input type="radio" name="gender-choice" id="female_input"/><span>여성</span>
+                    </div>
+                    <div id="male">
+                        <input type="radio" name="gender-choice" id="male_input"/><span>남성</span>
+                    </div>
+                </div>
+                <div class="err" id="err_gender"></div>
+                <div class="divideLine"></div>
+                <button class="box join" id="joinUsBtn" onclick="joinUs()" disabled>가입하기</button>
+            </div>
+        </div>
+    </body>
+</html>

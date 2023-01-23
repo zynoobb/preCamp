@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+.redAlert {
+    text-align: center;
+    color: red;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    margin-top: 118px;
+    margin-bottom: 118px;
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 960px;
+    border: 1px solid #aacdff;
+    background-color: #ffffff;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+    padding: 0px 80px;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.wrapper_header {
+    width: 380px;
+    height: 47px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    color: #0068ff;
+    margin: 30px 0px 10px 0px;
+}
+.body_input {
+    width: 380px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #797979;
+    height: 60px;
+    background: #ffffff;
+    border: 1px solid #D2D2D2;
+    /* border: 1px solid #0068ff; 클릭시 */
+    border-radius: 7px;
+    margin-top: 20px;
+    padding : 18px 14px;
+}
+.phone {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.phoneNum {
+    width: 100px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 14px;
+}
+.certify {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px 0px;
+}
+.certify_toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:10px 0px;
+}
+.certify_btn {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    background: #FFFFFF;
+    color : #797979;
+    cursor: pointer;
+    /* color: #0068FF; */
+}
+.certify_nums {
+    color: #0068FF;
+}
+.select_region {
+    width: 380px;
+    height: 60px;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #797979;
+    
+    padding: 18px 14px;
+}
+.gender {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:20px 0px 5px 0px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.gender-select {
+    margin : 0px 15px;
+}
+.join {
+    padding-top: 30px;
+    margin-top: 20px;
+    border-top: 1px solid #e6e6e6;
+}
+.joinBtn {
+    width: 380px;
+    height: 75px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid #D2D2D2;
+    color: #797979;
+    cursor: pointer;
+    margin-top: 20px;
+}
+/* border: 1px solid #0068FF; */
+/* color: #0068FF; */

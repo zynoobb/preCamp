@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300&display=swap');
+
+/* index */
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.mainBanner {
+    height: 280px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mainBanner .text{
+    font-size: 48px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+.sidebar {
+    width: 170px;
+}
+.mainMenu {
+    width: 100%;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.mainMenu ul {
+    padding: 0;
+    display: block;
+}
+.mainMenu ul li {
+    list-style: none;
+    display: block;
+}
+.mainMenu ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.writeBtnBox {
+    margin-top: 10px;
+}
+.writeBtn {
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.writeBtn .arrow {
+    /* 현상태에서 인라인블록으로 적용 */
+    display: inline-block;
+    padding-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* item */
+.itemWrap {
+    width: calc(100% - 170px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 15px;
+}
+.item {
+    width: calc(25% - 11px);
+    /* aspect-ratio 지정한 비율을 유지함 (가로) / (세로) */
+    aspect-ratio: 6 / 5;
+    position: relative;
+    /* overflow 영역 밖으로 나가지 못하게 함 */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+.imgBox {
+    width: 100%;
+    height: 100%;
+}
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    /* 찌그러지지 않기 위해 */
+    object-fit: cover;
+}
+.textBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+    z-index: 3;
+}
+.textBox p {
+    color: #ffffff;
+    margin: 5px 0 0 0;
+}
+.textBox_name {
+    font-size: 22px;
+    font-weight: 500;
+    /* 투명도 opacity : 0 일 경우 안보이게 할 수 있음*/
+    opacity: 0;
+    transform: translateY(50px);
+}
+.textBox_price {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.item:after, 
+.item .imgBox img,
+.item .textBox_name,
+.item .textBox_price {
+    transition: all 0.4s ease-in-out;
+}
+.item .textBox_price {
+    transition: all 0.4s ease-in-out 0.15s;
+}
+
+/* 배너 */
+.mainBanner {
+    width: 100%;
+    height: 280px;
+    background-image: url("./img/banner.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.mainBanner .text {
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    /* text-shadow : 가로축 그림자 길이, 세로축, 블러, 색상  */
+    text-shadow:2px 2px 3px rgba(0, 0, 0, 0.3);
+    animation: titleText 1s ease-in-out;
+}
+
+@keyframes titleText {
+    0% {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    92% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:767px){
+    /* mobile */
+    .mainBanner {
+        height: 160px;
+        margin-bottom: 0px;
+    }
+    .mainBanner .text {
+        font-size: 26px;
+    }
+    .wrapper {
+        flex-direction: column;
+        padding: 0;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .mainMenu {
+        padding: 0;
+        border-radius: 0;
+    }
+    .mainMenu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .mainMenu ul li a {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+    .writeBtnBox {
+        display: none;
+    }
+    .itemWrap {
+        width: 100%;
+        margin-top: 12px;
+        padding: 0;
+    }
+    .item {
+        width: calc(50% - 5px);
+        overflow: visible;
+        border: 1px solid #dddddd;
+    }
+    .textBox {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+    .textBox p {
+        color: black;
+    }
+    .textBox_name {
+        font-size: 18px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .textBox_price {
+        font-size: 12px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* tablet */
+    .itemWrap {
+        width: 100%;
+        padding: 0;
+        margin-top: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .item {
+        /* card */
+        overflow: visible;
+        border: 1px solid #dddddd;
+        margin: 0px 2.5px 5px 2.5px;
+    }
+    .textBox {
+        position: relative;
+        height: 70px;
+        width: 100%;
+    }
+    .textBox p {
+        color: black;
+    }
+    .textBox_name {
+        font-size: 16px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .textBox_price {
+        font-size: 12px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .item:hover:after {
+        opacity: 1;
+    }
+    .item:hover .textBox_name {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .item:hover .textBox_price {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .item:hover .imgBox img {
+        transform: scale(1.1);
+        /* 필터 */
+        filter: blur(2px);
+    }
+    .mainMenu ul li a:hover {
+        padding-left: 20px;
+        background-color: rgb(255, 145, 0);
+    }   
+    .writeBtn:hover {
+        background-color: #ffffff;
+        color: #333333;
+    }
+    .writeBtn:hover .arrow {
+        transform: translateX(50px);
+    }
+}

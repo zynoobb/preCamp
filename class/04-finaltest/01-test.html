@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <!-- style tag를 쓰는 방식
+    <style>.pw{
+        border: 1px solid blue;
+    }</style> -->
+<link href="./style/01-test.css" rel="stylesheet">     
+<script src="./01-test.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper_header">
+            코드캠프 회원가입
+        </div>
+        <div class="wrapper_body">
+            <div>
+            <input id="noneEmail" class="body_input" type="text" placeholder="이메일을 입력해주세요.">
+            <span id="redEmail" class="redAlert">이메일이 올바르지 않습니다.</span>
+            <input id="noneName" class="body_input" type="text" placeholder="이름을 입력해주세요.">
+            <span id="redName" class="redAlert">이름이 올바르지 않습니다.</span>
+            <input id="nonePw1" class="body_input" type="password" placeholder="비밀번호를 입력해주세요.">
+            <span id="redPw1" class="redAlert">비밀번호를 입력해주세요.</span>
+            <input id="nonePw2" class="body_input" type="password" placeholder="비밀번호를 다시 입력해주세요.">
+            <span id="redPw2" class="redAlert">비밀번호가 동일하지 않습니다.</span>
+            </div>
+            <div class="phone">
+                <input class="phoneNum" type="text" id="p1" oninput="changeFocus1()" maxlength="3"> -
+                <input class="phoneNum" type="text" id="p2" oninput="changeFocus2()" maxlength="4"> -
+                <input class="phoneNum" type="text" id="p3" oninput="changeFocus3()" maxlength="4">
+            </div>
+            <span id="redP123" class="redAlert">전화번호가 올바르지 않습니다.</span>
+            <div class="certify">
+                <div class="certify_toggle">
+                    <div class="certify_nums" id="target">000000</div>
+                    <button class="certify_btn" onClick="auth()" id="sendBtn" disabled="true">인증번호 전송</button>
+                </div>
+                <div class="certify_toggle">
+                    <div class="certify_nums" id="timer">3:00</div>
+                    <button class="certify_btn" id="complete" onclick="certifyClear()">인증확인</button>
+                </div>
+            </div>
+                <select id="selectRegion" class="select_region" name="">
+                    <option value="" disabled="true" selected="true">지역을 선택하세요.</option>
+                    <option value="seoul">서울</option>
+                    <option value="incheon">인천</option>
+                    <option value="gyeonggi">경기</option>
+                </select>
+            <span id="redRegion" class="redAlert">지역을 선택하세요.</span>
+                <div class="gender">
+                    <div class="gender-select">
+                        <input name="gender-choice" id="female" value="female" type="radio">
+                        <span>여성</span>
+                    </div>
+                    <div class="gender-select">
+                        <input name="gender-choice" id="male" value="male" type="radio">
+                        <span>남성</span>
+                    </div>
+                </div>
+                <span id="redGender" class="redAlert">성별을 선택하세요.</span>
+                <div class="join">
+                    <button onclick="joinUs()" id="joinBtn" class="joinBtn" disabled="true">가입하기</button>
+                </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

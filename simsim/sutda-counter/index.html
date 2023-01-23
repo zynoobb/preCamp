@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <script src="./index.js" defer></script>
+        <title>섯다 카운터</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="head_wrapper">
+                <h1>섯다 카운터</h1>
+                <div class="neck_wrapper">
+                    <!-- 인원 추가 -->
+                    <div class="person_add">
+                        <input
+                            type="text"
+                            id="person_add_input"
+                            placeholder="선수 이름"
+                            onkeydown="personAddEnter()"
+                        />
+                        <button id="person_add_btn" onclick="personAdd()">
+                            인원 추가
+                        </button>
+                    </div>
+                    <!-- 메인 인풋 1사분면-->
+                    <div class="point_add">
+                        <h2>게임 내용</h2>
+                        <div class="add_wrapper">
+                            <div id="select_wrapper">
+                                <div>
+                                    <span>승자 이름</span
+                                    ><select
+                                        name=""
+                                        id="select_player"
+                                        onchange="winnerSelect()"
+                                    >
+                                        <option value="x" disabled selected>
+                                            승자 선택
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button id="result_btn" onclick="render()">결과 입력</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body_wrapper">
+                <!-- 포인트 기록 -->
+                <div class="point_wrapper">
+                    <ul id="ul_point"></ul>
+                </div>
+                <!-- 2사분면 게임 내용 기록 -->
+                <div class="game_wrapper">
+                    <div>
+                        <div>asd</div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
